@@ -1,4 +1,4 @@
 # code-snippets
-my code snippets
+code snippets
 
 random code snippets
