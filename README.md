@@ -1,4 +1,1 @@
-# code-snippets
-code snippets
-
-random code snippets
+# Code Snippets
