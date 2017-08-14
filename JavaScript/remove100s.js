@@ -1,6 +1,5 @@
 // remove 100 in a string
 
-
 var data = "11000010";
 
 while (data.indexOf("100") != -1) {
