@@ -1,5 +1,3 @@
-package com.suru.test;
-
 public class StringPermutations {
     public static void main(String[] args) {
         permutation("STRING");
