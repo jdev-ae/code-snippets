@@ -1,4 +1,3 @@
-import java.security.Principal;
 import java.util.Arrays;
 
 public class Median {
