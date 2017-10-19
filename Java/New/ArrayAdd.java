@@ -4,14 +4,14 @@ public class ArrayAdd {
 
     public static void main(String[] args) {
 
-        int[] array1 = { 1, 2, 3 };
-        int[] array2 = { 4, 5, 6 };
-        int[] array1and2 = new int[array1.length + array2.length];
+        int[] A = { 1, 2, 3 };
+        int[] B = { 4, 5, 6 };
+        int[] C = new int[A.length + B.length];
 
-        System.arraycopy(array1, 0, array1and2, 0, array1.length);
-        System.arraycopy(array2, 0, array1and2, array1.length, array2.length);
+        System.arraycopy(A, 0, C, 0, A.length);
+        System.arraycopy(B, 0, C, A.length, B.length);
 
-        System.out.println(Arrays.toString(array1and2));
+        System.out.println(Arrays.toString(C));
 
     }
 
