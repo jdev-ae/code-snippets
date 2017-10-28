@@ -7,6 +7,31 @@
   <img src="https://raw.githubusercontent.com/jdev-ae/code-snippets/master/images/img_innerjoin.gif" alt="Inner Join"/>
 </p>
 
+```sql
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2 ON table1.column_name = table2.column_name;
+```
+
+** Joining two tables **
+
+> The following SQL statement selects all orders with customer information:
+
+```sql
+SELECT Orders.OrderID, Customers.CustomerName
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+```
+> The following SQL statement selects all orders with customer and shipper information: 
+
+```sql
+SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName
+FROM ((Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)
+INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);
+```
+
+
 * **LEFT (OUTER) JOIN:** Return all records from the left table, and the matched records from the right table
 <p align="center">
   <img src="https://raw.githubusercontent.com/jdev-ae/code-snippets/master/images/img_leftjoin.gif" alt="Inner Join"/>
