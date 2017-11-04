@@ -13,17 +13,15 @@ FROM table1
 INNER JOIN table2 ON table1.column_name = table2.column_name;
 ```
 
-** Joining two tables **
-
+**Joining two tables**
 > The following SQL statement selects all orders with customer information:
-
 ```sql
 SELECT Orders.OrderID, Customers.CustomerName
 FROM Orders
 INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
 ```
+**Joining three tables**
 > The following SQL statement selects all orders with customer and shipper information: 
-
 ```sql
 SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName
 FROM ((Orders
